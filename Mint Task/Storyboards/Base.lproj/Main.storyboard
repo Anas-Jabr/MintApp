@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3hJ-A2-m3U">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="fbspacer_regular.otf">
+            <string>FbSpacer-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--My Prezi-->
+        <scene sceneID="NM0-0W-aRZ">
+            <objects>
+                <viewController storyboardIdentifier="MyPrizeViewController" id="ZOk-U2-Lxm" customClass="MyPrizeViewController" customModule="Mint_Task" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zCw-Km-Ix6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="PdZ-rJ-2hV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="My Prezi" image="ic_prezi" id="cAW-OO-G68"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CCl-iZ-JqN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="628" y="489"/>
+        </scene>
+        <!--Feed-->
+        <scene sceneID="Wi4-sA-rBd">
+            <objects>
+                <viewController storyboardIdentifier="FeedViewController" id="cXu-dQ-WWH" customClass="FeedViewController" customModule="Mint_Task" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="x2x-TP-Fbf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_userIcon" translatesAutoresizingMaskIntoConstraints="NO" id="hDJ-hH-rDf" customClass="RoundedImage" customModule="Mint_Task" customModuleProvider="target">
+                                <rect key="frame" x="22" y="54" width="55" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="55" id="EEf-ne-NXj"/>
+                                    <constraint firstAttribute="height" constant="55" id="MCB-Ik-b85"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="27.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="uiR-Jc-PWP">
+                                <rect key="frame" x="90" y="62" width="55.666666666666657" height="39"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="PKO-Ad-jDg">
+                                        <rect key="frame" x="0.0" y="0.0" width="55.666666666666664" height="17"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="feed_gain_cap" translatesAutoresizingMaskIntoConstraints="NO" id="Wth-XS-J47">
+                                                <rect key="frame" x="0.0" y="0.0" width="17" height="17"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="17" id="w4d-Pj-3Is"/>
+                                                    <constraint firstAttribute="width" constant="17" id="wsX-hN-x9E"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="172" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6gC-89-8C4">
+                                                <rect key="frame" x="21.999999999999996" y="0.0" width="33.666666666666657" height="17"/>
+                                                <fontDescription key="fontDescription" name="FbSpacer-Regular" family="Fb Spacer" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="mxu-J0-1be">
+                                        <rect key="frame" x="0.0" y="22" width="55.666666666666664" height="17"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_doing_good" translatesAutoresizingMaskIntoConstraints="NO" id="Y4v-E6-oib">
+                                                <rect key="frame" x="0.0" y="0.0" width="17" height="17"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="17" id="8fF-rf-1GP"/>
+                                                    <constraint firstAttribute="width" constant="17" id="fVk-2S-TfR"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oiv-BC-yT2">
+                                                <rect key="frame" x="21.999999999999996" y="0.0" width="33.666666666666657" height="17"/>
+                                                <fontDescription key="fontDescription" name="FbSpacer-Regular" family="Fb Spacer" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="org_logo" translatesAutoresizingMaskIntoConstraints="NO" id="5ur-dy-ogR">
+                                <rect key="frame" x="268" y="64.666666666666671" width="108" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="RWW-lK-zZo"/>
+                                    <constraint firstAttribute="width" constant="108" id="Tyw-sC-3Cd"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iUs-df-9XL" customClass="TYCyclePagerView">
+                                <rect key="frame" x="0.0" y="123" width="414" height="628"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Avd-Mp-Lxh"/>
+                        <color key="backgroundColor" red="0.17254901960784313" green="0.17254901960784313" blue="0.17254901960784313" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="uiR-Jc-PWP" firstAttribute="leading" secondItem="hDJ-hH-rDf" secondAttribute="trailing" constant="13" id="6oD-RY-pE0"/>
+                            <constraint firstItem="uiR-Jc-PWP" firstAttribute="centerY" secondItem="hDJ-hH-rDf" secondAttribute="centerY" id="AHf-2k-2qg"/>
+                            <constraint firstItem="iUs-df-9XL" firstAttribute="leading" secondItem="Avd-Mp-Lxh" secondAttribute="leading" id="MDY-5g-H4O"/>
+                            <constraint firstItem="hDJ-hH-rDf" firstAttribute="leading" secondItem="Avd-Mp-Lxh" secondAttribute="leading" constant="22" id="UMc-uG-S8f"/>
+                            <constraint firstItem="iUs-df-9XL" firstAttribute="top" secondItem="uiR-Jc-PWP" secondAttribute="bottom" constant="22" id="Xpw-Gg-nxV"/>
+                            <constraint firstItem="Avd-Mp-Lxh" firstAttribute="trailing" secondItem="5ur-dy-ogR" secondAttribute="trailing" constant="38" id="crV-Bo-mS6"/>
+                            <constraint firstItem="hDJ-hH-rDf" firstAttribute="top" secondItem="x2x-TP-Fbf" secondAttribute="top" constant="54" id="eee-cT-Kde"/>
+                            <constraint firstItem="5ur-dy-ogR" firstAttribute="centerY" secondItem="hDJ-hH-rDf" secondAttribute="centerY" id="kCp-oR-XYQ"/>
+                            <constraint firstItem="Avd-Mp-Lxh" firstAttribute="bottom" secondItem="iUs-df-9XL" secondAttribute="bottom" constant="62" id="nLC-d9-ihF"/>
+                            <constraint firstItem="Avd-Mp-Lxh" firstAttribute="trailing" secondItem="iUs-df-9XL" secondAttribute="trailing" id="pY3-V3-3KY"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Feed" image="ic_feed" id="idk-x1-XeY">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="pager" destination="iUs-df-9XL" id="NUV-hR-D04"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="66p-TO-fSZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="627.536231884058" y="-196.20535714285714"/>
+        </scene>
+        <!--Main Tab Bar View Controller-->
+        <scene sceneID="58U-UF-Tso">
+            <objects>
+                <tabBarController id="3hJ-A2-m3U" customClass="MainTabBarViewController" customModule="Mint_Task" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NG9-Lg-2bR" customClass="TabBarWithCurve" customModule="Mint_Task" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="cXu-dQ-WWH" kind="relationship" relationship="viewControllers" id="pKX-AE-zaK"/>
+                        <segue destination="ZOk-U2-Lxm" kind="relationship" relationship="viewControllers" id="7mj-it-Vk7"/>
+                        <segue destination="MRb-VZ-qj5" kind="relationship" relationship="viewControllers" id="aQa-qs-5eD"/>
+                        <segue destination="Ynq-cu-Rlw" kind="relationship" relationship="viewControllers" id="QOz-dR-2a8"/>
+                        <segue destination="lpr-Ad-qnA" kind="relationship" relationship="viewControllers" id="6Ki-Mk-AuR"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xAR-At-9ax" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-332" y="1155"/>
+        </scene>
+        <!--Doing Good-->
+        <scene sceneID="U8T-KB-dfm">
+            <objects>
+                <viewController storyboardIdentifier="DoingGoodViewController" id="Ynq-cu-Rlw" customClass="DoingGoodViewController" customModule="Mint_Task" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2x5-vl-z2r">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="glY-jH-1gP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Doing Good" image="ic_doing_good" id="jEs-7S-XVx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hTb-cK-dno" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="628" y="1848"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="DqI-DX-rlK">
+            <objects>
+                <viewController storyboardIdentifier="ProfileViewController" id="lpr-Ad-qnA" customClass="ProfileViewController" customModule="Mint_Task" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8Qp-cs-Dps">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Jcp-UI-bFQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profile" image="ic_profile" id="zh3-rC-7bd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7dk-NK-Vxl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="628" y="2524"/>
+        </scene>
+        <!--Middle View Controller-->
+        <scene sceneID="1DA-OM-Z1p">
+            <objects>
+                <viewController storyboardIdentifier="MiddleViewController" id="MRb-VZ-qj5" customClass="MiddleViewController" customModule="Mint_Task" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wmC-AQ-2F5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="BbA-pr-utb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" id="QUk-e9-nRy"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EdN-Ss-tnU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="628" y="1160"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="hDJ-hH-rDf">
+            <size key="intrinsicContentSize" width="100" height="100"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="feed_gain_cap" width="110.66666412353516" height="110.66666412353516"/>
+        <image name="ic_doing_good" width="25" height="28.333333969116211"/>
+        <image name="ic_feed" width="28" height="27.333333969116211"/>
+        <image name="ic_prezi" width="29" height="27.333333969116211"/>
+        <image name="ic_profile" width="20.666666030883789" height="27.333333969116211"/>
+        <image name="ic_userIcon" width="100" height="100"/>
+        <image name="org_logo" width="144" height="45.333332061767578"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
