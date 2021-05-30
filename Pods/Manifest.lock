@@ -1,0 +1,16 @@
+PODS:
+  - TYCyclePagerView (1.2.0)
+
+DEPENDENCIES:
+  - TYCyclePagerView
+
+SPEC REPOS:
+  trunk:
+    - TYCyclePagerView
+
+SPEC CHECKSUMS:
+  TYCyclePagerView: 2b051dade0615c70784aa34f40c646feeddb7344
+
+PODFILE CHECKSUM: 45ef7190761df8c7cf0a83f01f7fc9c771a11b5a
+
+COCOAPODS: 1.10.0
